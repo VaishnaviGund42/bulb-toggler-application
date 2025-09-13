@@ -18,6 +18,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+    
+
+        }
+        #bulb {
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -26,10 +34,14 @@
     <h1 class="header">Bulb Turn on-off</h1>
     
         <img src="off.png" id="bulb" alt="Bulb">
+    
 
     <div class="buttons">
         <button id="onBtn">Turn On</button>
-        <button id="offBtn">Turn Off</button>   
+        <button id="offBtn">Turn Off</button>  
+         <button onclick="toggleBulb()">Toggle</button>
+
+    </div>
     </div>
     
 </body>
