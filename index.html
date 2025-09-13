@@ -63,8 +63,8 @@
     
 
     <div class="buttons">
-        <button id="onBtn" class="button">Turn On</button>
-        <button id="offBtn" class="button">Turn Off</button>  
+        <button id="onBtn" class="button" onclick="turnOn()">Turn On</button>
+        <button id="offBtn" class="button" onclick="turnOff()">Turn Off</button>  
          <button onclick="toggleBulb()" class="button">Toggle</button>
 
     </div>
@@ -75,11 +75,11 @@
         const offBtn = document.getElementById('offBtn');
         let isOn = false;
         function turnOn() {
-          bulb.src = 'bulb-on.png';
+          bulb.src = 'power.png';
            isOn = true;
                }
                function turnOff() {
-               bulb.src = "bulb-off.png";
+               bulb.src = "off.png";
                    isOn = false;
                     }
                 function toggleBulb() {
