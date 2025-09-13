@@ -79,9 +79,17 @@
            isOn = true;
                }
                function turnOff() {
-  bulb.src = "bulb-off.png";
-  isOn = false;
-}
+               bulb.src = "bulb-off.png";
+                   isOn = false;
+                    }
+                function toggleBulb() {
+                    if (isOn) {
+                        turnOff();
+                    } else {
+                        turnOn();
+                    }
+                }
+
 
 
 
