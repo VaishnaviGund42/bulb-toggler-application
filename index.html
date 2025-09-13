@@ -36,6 +36,17 @@
             gap: 10px;
             justify-content: center;
             margin-top: 20px; 
+            flex-wrap: wrap;
+        }
+        .button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s, transform 0.2s;
         }
           
        
@@ -49,9 +60,9 @@
     
 
     <div class="buttons">
-        <button id="onBtn">Turn On</button>
-        <button id="offBtn">Turn Off</button>  
-         <button onclick="toggleBulb()">Toggle</button>
+        <button id="onBtn" class="button">Turn On</button>
+        <button id="offBtn" class="button">Turn Off</button>  
+         <button onclick="toggleBulb()" class="button">Toggle</button>
 
     </div>
     </div>
